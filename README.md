@@ -5,13 +5,14 @@
 ## Functions
   1. 
   
-    a)  Recieved (Bytes)=Total data recieved since the app was installed 
-
-    b)  Recieved (Bytes)=Total data sent since the app was installed
+| Tables        | Recieved (Bytes)        | Sent (Bytes)  |
+| ------------- |:-------------:| -----:|
+| Latest      | Total Bytes recieved at this moment (or after click the button (Take Snapshot)) | ..sent.. |
+| Previous      | Total Bytes recieved before click the button (Take Snapshot)      |   ..sent.. |
+| Delta | Total Bytes recieved between 2 clicks of the button (Take Snapshot)     |    ..sent.. |
     
-    c)  Latest = Total Bytes at this moment (or after click the button (Take Snapshot))
+   Related Image:
     
-    d)  Previous = Total Bytes before click the button (Take Snapshot)
   
   2. 
    The ListView under the table shows what apps are using the data currently.
@@ -21,4 +22,13 @@
   3. 
     Since "TrafficStats" will be cleared every time of rebooting, I solved this problem by saving all the data in a database using SQLite. 
 
-## 
+## API reference
+  TrafficStats: since API level 18
+
+## Code reference
+  I had read this code before I made my own solution:
+  
+  https://github.com/commonsguy/cw-andtuning/tree/master/TrafficMonitor
+
+## Screen shots
+
