@@ -1,11 +1,10 @@
 # TrafficMonitor
-
-Traffic Monitor
+# Brief Introduction
 
   This is an Android app that could track the data usage of the phone, basically using the method of "TrafficStats".
   Since "TrafficStats" will be cleared every time of rebooting, I solved this problem by saving all the data in a database using SQLite. 
   
-Functions
+# Functions
   Recieved (Bytes)=Total data recieved since the app was installed
   Recieved (Bytes)=Total data sent since the app was installed
   Latest = Total Bytes at this moment (or after click the button (Take Snapshot))
