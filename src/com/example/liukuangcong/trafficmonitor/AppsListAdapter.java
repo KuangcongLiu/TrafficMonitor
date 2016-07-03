@@ -10,6 +10,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+/*
+ * This class makes an adapter for the listview. 
+ */
+
+
 public class AppsListAdapter extends ArrayAdapter<String> {
 	// List context
 	private final Context context;
