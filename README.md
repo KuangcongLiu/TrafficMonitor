@@ -13,7 +13,7 @@
     
    **Related Image:**
 
-    ![](./img/Screen Shot 2016-07-02 at 08.37.33)
+    ![](./img/1.png)
   
   2. 
    The ListView under the table shows what apps are using the data currently.
@@ -22,7 +22,7 @@
 
 **Related Image:**
 
- ![](./img/Screen Shot 2016-07-03 at 21.15.45)
+ ![](./img/2.png)
 
 
   3. 
@@ -35,7 +35,7 @@
 
 **Related Image:**
 
-![](./img/Screen Shot 2016-07-03 at 20.47.34)
+![](./img/3.png)
 
 
 
@@ -48,4 +48,4 @@
   https://github.com/commonsguy/cw-andtuning/tree/master/TrafficMonitor
 
 ## Screen shots
-![](./img/second-1.gif)
+![](./img/second-2.gif)
