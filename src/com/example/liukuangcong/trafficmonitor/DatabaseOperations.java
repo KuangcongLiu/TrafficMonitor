@@ -51,6 +51,21 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 		}
 		SQ.close();
 	}
+	
+	public void putInFollowingRow(DatabaseOperations dop,long rx,long tx){
+		SQLiteDatabase SQ=dop.getWritableDatabase();
+		ContentValues cv=new ContentValues();
+		cv.put(TableInfo.PREVIOUS_RX_STRING,rx);
+		cv.put(TableInfo.PREVIOUS_TX_STRING,tx);
+		//cv.put(TableInfo.ID,idnumber);
+		cv.put(TableInfo.BOOT_TIME, System.currentTimeMillis());
+		boolean sign =checkRowTwo(SQ);
+		if(sign){		
+			SQ.insert(TableInfo.TABLE_NAME, null, cv);
+		}
+		
+		SQ.close();
+	}
 
 	public boolean checkRowTwo(SQLiteDatabase SQ){
 		String Query = "Select * from " + TableInfo.TABLE_NAME + " where " + TableInfo.ID + " = " + id+1;
@@ -111,7 +126,13 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 			Cursor CR=SQ.query(TableInfo.TABLE_NAME, columns, null,null,null,null,null);
 			return CR;
 		}
-
+	}
+	
+	public Cursor readDataBase(DatabaseOperations dop,Context context){
+		String[] columns={TableInfo.ID,TableInfo.PREVIOUS_RX_STRING,TableInfo.PREVIOUS_TX_STRING,TableInfo.BOOT_TIME};		
+		SQLiteDatabase SQ=dop.getReadableDatabase();
+		Cursor CR=SQ.query(TableInfo.TABLE_NAME, columns, null,null,null,null,null);
+		return CR;
 	}
 
 	public String getTableAsString(SQLiteDatabase db, String tableName) {

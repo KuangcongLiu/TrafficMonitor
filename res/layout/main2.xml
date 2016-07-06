@@ -5,6 +5,10 @@
     android:orientation="vertical" >
 
     <include
+        android:id="@+id/searchview"
+        layout="@layout/timeselected" />
+    
+    <include
         android:id="@+id/tableview"
         layout="@layout/main" />
 
