@@ -3,7 +3,7 @@
   
   
 ## Functions
-  1. 
+###  1. 
   
 | Table      | Recieved (Bytes)        | Sent (Bytes)  |
 | ------------- |:-------------:| -----:|
@@ -16,7 +16,7 @@
 
  ![](./img/1.jpg)
   
-  2. 
+###  2. 
   
    The ListView under the table shows what apps are using the data currently.
   
@@ -29,7 +29,7 @@
  ![](./img/3.jpg)
 
 
-  3. 
+### 3. 
   
     Since "TrafficStats" will be cleared every time of rebooting, I solved this problem by saving all the data in a database using SQLite. 
 
