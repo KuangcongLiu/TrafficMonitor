@@ -10,17 +10,16 @@
 | Latest      | Total Bytes recieved at this moment (or after click the button (Take Snapshot)) | ..sent.. |
 | Previous      | Total Bytes recieved before click the button (Take Snapshot)      |   ..sent.. |
 | Delta | Total Bytes recieved between 2 clicks of the button (Take Snapshot)     |    ..sent.. |
-    
-   **The Image of the data table**
+
+**The Image of the data table**
 
 
  ![](./img/1.jpg)
   
 ###  2. 
+  The ListView under the table shows what apps are using the data currently.
   
-   The ListView under the table shows what apps are using the data currently.
-  
-   By clicking on the package name of the app, the user could get an alert, showing how many bytes this specific app has recieved and sent. 
+  By clicking on the package name of the app, the user could get an alert, showing how many bytes this specific app has recieved and sent. 
 
 
 **The image of the prompt**
@@ -30,8 +29,7 @@
 
 
 ### 3. 
-  
-    Since "TrafficStats" will be cleared every time of rebooting, I solved this problem by saving all the data in a database using SQLite. 
+  Since "TrafficStats" will be cleared every time of rebooting, I solved this problem by saving all the data in a database using SQLite. 
 
 
 | ID (row number)      | Previous_rx (bytes)       | Previous_tx (bytes) |  Boot_time |
